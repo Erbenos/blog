@@ -43,18 +43,18 @@ exports.hasNodeNonCompleteFrontmatter = function(node) {
 };
 
 exports.GET_ALL_POST_SLUGS_QUERY = `
-          {
-            allMarkdownRemark {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                }
-              }
-            }
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          fields {
+            slug
           }
-        `;
+        }
+      }
+    }
+  }
+`;
 
 exports.compareByDate = function(
   { frontmatter: { date: date1 } },
