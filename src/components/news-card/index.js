@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
-  A,
+  Link,
   Card,
   Divider,
   Row,
   Text,
   Title,
   TitleIcon,
-} from './styles';
+} from '../../styles/news-card';
 
 const NewsCard = ({ items }) => (
   <Card>
@@ -18,12 +19,12 @@ const NewsCard = ({ items }) => (
     </Row>
     {items.map((item, index) => {
       return (
-        <>
+        <React.Fragment key={index}>
           <Divider />
-          <A href={item.url} key={index}>
+          <Link href={item.url}>
             <Text>{item.text}</Text>
-          </A>
-        </>
+          </Link>
+        </React.Fragment>
       );
     })}
   </Card>

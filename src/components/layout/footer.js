@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Container } from 'react-grid-system';
-import { CookiesNote, FooterLink, StyledFooter, ToolbarItem } from './styles';
+import {
+  CookiesNote,
+  FooterLink,
+  StyledFooter,
+  ToolbarItem,
+} from '../../styles/layout';
 
 const Footer = ({ items }) => {
   return (

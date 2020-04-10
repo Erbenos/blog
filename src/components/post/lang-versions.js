@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Author } from './styles';
+import Author from '../../styles/post/Author';
 
 const LangVersions = ({ versions }) => (
   <>

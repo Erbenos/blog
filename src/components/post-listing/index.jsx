@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-grid-system';
 import PropTypes from 'prop-types';
-import PostCard from "../post-card";
-import NewsCard from "../news-card";
+import PostCard from '../post-card';
+import NewsCard from '../news-card';
 
 const PostListing = ({ posts, news }) => {
   const firstPost = posts[0];
@@ -23,7 +23,6 @@ const PostListing = ({ posts, news }) => {
         <Col xs={12} lg={4} style={{ padding: 10 }}>
           <NewsCard items={news} />
         </Col>
-
         {otherPosts.map(post => (
           <Col md={6} lg={4} xs={12} key={post.title} style={{ padding: 10 }}>
             <PostCard

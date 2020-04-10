@@ -1,8 +1,18 @@
 import React from 'react';
 import moment from 'moment';
-import { AuthorDate, Container, Description, Padding, Span, StyledLink, Title } from './styles';
+import PropTypes from 'prop-types';
+
+import {
+  AuthorDate,
+  Container,
+  Description,
+  Padding,
+  Span,
+  StyledLink,
+  Title,
+} from '../../styles/post-card';
+
 import { DATE_FORMAT } from './helpers';
-import PropTypes from "prop-types";
 
 const PostCard = ({ slug, title, description, author, cover, date }) => {
   return (

@@ -1,21 +1,24 @@
 import React from 'react';
 import moment from 'moment';
+import PropTypes from 'prop-types';
+
 import {
   Arrow,
   Author,
   AuthorDate,
   Button,
-  Container, Content,
+  Container,
+  Content,
   Description,
   Padding,
   Title,
-} from './styles';
-import PropTypes from 'prop-types';
+} from '../../styles/post';
+
+import SyntaxHighlighting from '../../styles/SyntaxHighlighting';
 import PostCard from '../post-card';
 import { DATE_FORMAT } from '../post-card/helpers';
 import config from '../../../data/site-config';
 import LangVersions from './lang-versions';
-import './b16-tomorrow-dark.css';
 
 const Post = ({
   title,
@@ -53,6 +56,7 @@ const Post = ({
         Zpět na všechny články
       </Button>
     </Padding>
+    <SyntaxHighlighting/>
   </Container>
 );
 

@@ -1,14 +1,13 @@
 import { Col, Container } from 'react-grid-system';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Logo,
   NavigationBar,
   ResponsiveCenterCol,
   ResponsiveCenterRow,
   ToolbarLink,
-} from './styles';
-import React from 'react';
-import PropTypes from 'prop-types';
-
+} from '../../styles/layout';
 
 const Header = ({ items }) => (
   <header>

@@ -1,9 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Col, Row } from 'react-grid-system';
 import { graphql } from 'gatsby';
 import SEO from '../../components/seo';
 import config from '../../../data/site-config';
-import { Col, Row } from 'react-grid-system';
 import MainLayout from '../../components/layout';
 import PostCard from '../../components/post-card';
 import { edgeToPost } from '../../components/post-card/helpers';

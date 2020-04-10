@@ -1,7 +1,14 @@
 import React from 'react';
-import './index.css';
+
+import GlobalStyle from '../../styles/GlobalStyles';
+import CustomProperties from '../../styles/CustomProperties';
+
+import {
+  Content,
+  Layout,
+} from '../../styles/layout';
+
 import Footer from './footer';
-import { Content, Layout } from './styles';
 import Header from './header';
 import Head from './head';
 
@@ -54,11 +61,13 @@ const MainLayout = props => {
   const { children } = props;
   let navBarItems = ITEMS.slice(0, ITEMS.length - 3);
   return (
-    <Layout >
+    <Layout>
       <Head/>
       <Header items={navBarItems} />
       <Content>{children}</Content>
       <Footer items={ITEMS} />
+      <GlobalStyle/>
+      <CustomProperties/>
     </Layout>
   );
 };
