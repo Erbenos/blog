@@ -13,6 +13,10 @@ const AuthorDate = styled.div`
   color: var(--cd-post-author-text-color);
   width: auto;
   opacity: 0.5;
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: color .2s ease-in-out;
+  }
 `;
 
 export default AuthorDate;

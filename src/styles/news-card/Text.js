@@ -7,11 +7,16 @@ const Text = styled.span`
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
-  /* or 24px */
+
   :hover {
     transition: all 200ms ease-in-out;
     opacity: 1;
   }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: opacity .2s ease-in-out;
+  }
+
   :before {
     display: inline-block;
     content: '►';
@@ -20,8 +25,12 @@ const Text = styled.span`
     font-size: 0.8em;
     margin-right: 8px;
     vertical-align: top;
-    transition: 0.25s transform ease-out;
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+      transition: transform .2s ease-in-out;
+    }
   }
+
 `;
 
 export default Text;

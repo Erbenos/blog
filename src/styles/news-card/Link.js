@@ -22,7 +22,10 @@ const Link = styled.a`
     width: calc(100% - 40px);
     height: 100%;
     box-shadow: 0 4px 5px -5px #ffffff;
-    transition: 0.25s box-shadow ease-out;
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+      transition: box-shadow .2s ease-in-out;
+    }
   }
 
   :hover:before {
@@ -31,6 +34,10 @@ const Link = styled.a`
 
   :hover ${Text}:before {
     transform: translateX(5px);
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: color .2s ease-in-out;
   }
 `;
 

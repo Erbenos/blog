@@ -17,8 +17,11 @@ export const ToolbarLink = styled.a`
     props.underline ? 'border-bottom: solid 1px rgba(0,0,0,0.5);' : ''}
 
   &:hover {
-    transition: all 200ms ease-in-out;
     opacity: 0.6;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: opacity .2s ease-in-out, color .2s ease-in-out;
   }
 
   @media (max-width: 768px) {

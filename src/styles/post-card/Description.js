@@ -20,6 +20,10 @@ const Description = styled.p`
   color: var(--cd-post-card-description-text-color);
 
   opacity: 0.75;
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: color .2s ease-in-out;
+  }
 `;
 
 export default Description;

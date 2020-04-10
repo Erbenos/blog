@@ -24,9 +24,15 @@ const Button = styled(Link)`
   color: var(--cd-post-button-text-color);
   padding: 12px 16px 12px 16px;
 
-  transition: all 200ms ease-in-out;
   :hover {
     border: 2px solid rgba(0, 0, 0, 0.6);
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition:
+      background .2s ease-in-out,
+      border .2s ease-in-out,
+      color .2s ease-in-out;
   }
 `;
 

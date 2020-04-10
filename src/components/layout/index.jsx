@@ -1,5 +1,6 @@
 import React from 'react';
 
+import CssReset from '../../styles/Reset';
 import GlobalStyle from '../../styles/GlobalStyles';
 import CustomProperties from '../../styles/CustomProperties';
 
@@ -62,12 +63,13 @@ const MainLayout = props => {
   let navBarItems = ITEMS.slice(0, ITEMS.length - 3);
   return (
     <Layout>
+      <CssReset/>
       <Head/>
       <Header items={navBarItems} />
       <Content>{children}</Content>
       <Footer items={ITEMS} />
-      <GlobalStyle/>
       <CustomProperties/>
+      <GlobalStyle/>
     </Layout>
   );
 };

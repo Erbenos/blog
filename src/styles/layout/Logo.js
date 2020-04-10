@@ -13,8 +13,11 @@ const Logo = styled.a`
   }
 
   &:hover {
-    transition: all 200ms ease-in-out;
     opacity: 0.6;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: opacity .2s ease-in-out, color .2s ease-in-out;
   }
 `;
 

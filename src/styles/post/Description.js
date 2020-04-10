@@ -18,6 +18,10 @@ const Description = styled.p`
   /* or 24px */
 
   margin-top: 10px;
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: color .2s ease-in-out;
+  }
 `;
 
 export default Description;

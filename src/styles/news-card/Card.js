@@ -6,7 +6,11 @@ const Card = styled.div`
   border-radius: 14px;
   padding: 20px 20px 0 20px;
   max-height: 740px;
-  height: 100%; 
+  height: 100%;
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: background .2s ease-in-out;
+  }
 `;
 
 export default Card;

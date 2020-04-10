@@ -12,8 +12,7 @@ const Content = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-
-    color: var(--cd-post-content-text-color);
+    margin: 1em auto;
   }
 
   p, li {
@@ -21,12 +20,52 @@ const Content = styled.div`
   }
 
   ul, ol {
+    list-style-type: disc;
     padding-left: 1.2em;
   }
 
   img {
     border-radius: 10px;
     max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: block;
+    font-weight: bold;
+  }
+
+  h1 {
+    margin: 0.75em 0;
+    font-size: 2em;
+  }
+
+  h2 {
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    margin: 1.1em 0;
+    font-size: 1.17em;
+  }
+
+  h4 {
+    margin: 1.3em 0;
+  }
+
+  h5 {
+    margin: 1.7em 0;
+    font-size: 0.83em;
+  }
+
+  h6 {
+    margin: 2.3em 0;
+    font-size: 0.67em;
   }
 
   .picture-note {
@@ -44,7 +83,6 @@ const Content = styled.div`
     text-decoration: none;
 
     :hover {
-      transition: all 200ms ease-in-out;
       color: var(--cd-post-content-link-hover-text-color);
     }
 
@@ -52,10 +90,12 @@ const Content = styled.div`
       color: var(--post-content-visited);
       border-bottom: 1px solid var(--cd-post-content-link-visited-text-color);
     }
-  }
 
-  h2 {
-    margin-top: 50px;
+    @media screen and (prefers-reduced-motion: no-preference) {
+      transition: 
+        color .2s ease-in-out,
+        border .2s ease-in-out;
+    }
   }
 
   .volunteers {
@@ -90,6 +130,10 @@ const Content = styled.div`
       opacity: 0.5;
     }
   
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: color .2s ease-in-out;
   }
 `;
 

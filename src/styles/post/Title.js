@@ -10,6 +10,10 @@ const Title = styled.h1`
 
   color: var(--cd-post-title-text-color);
   margin: 0;
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: color .2s ease-in-out;
+  }
 `;
 
 export default Title;
