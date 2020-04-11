@@ -25,7 +25,7 @@ const Button = styled(Link)`
   padding: 12px 16px 12px 16px;
 
   :hover {
-    border: 2px solid rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--cd-post-button-hover-border-color);
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {

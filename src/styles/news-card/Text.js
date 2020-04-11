@@ -13,9 +13,6 @@ const Text = styled.span`
     opacity: 1;
   }
 
-  @media screen and (prefers-reduced-motion: no-preference) {
-    transition: opacity .2s ease-in-out;
-  }
 
   :before {
     display: inline-block;
@@ -25,8 +22,12 @@ const Text = styled.span`
     font-size: 0.8em;
     margin-right: 8px;
     vertical-align: top;
+  }
 
-    @media screen and (prefers-reduced-motion: no-preference) {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: opacity .2s ease-in-out;
+
+    :before {
       transition: transform .2s ease-in-out;
     }
   }

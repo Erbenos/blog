@@ -29,6 +29,14 @@ const Content = styled.div`
     max-width: 100%;
   }
 
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
   h1,
   h2,
   h3,
@@ -78,7 +86,7 @@ const Content = styled.div`
   }
 
   a {
-    border-bottom: 1px solid rgba(37, 110, 102, 0.25);
+    border-bottom: 1px solid var(--cd-post-content-link-border-color);
     color: var(--cd-post-content-link-text-color);
     text-decoration: none;
 
@@ -87,15 +95,9 @@ const Content = styled.div`
     }
 
     :visited {
-      color: var(--post-content-visited);
-      border-bottom: 1px solid var(--cd-post-content-link-visited-text-color);
-    }
-
-    @media screen and (prefers-reduced-motion: no-preference) {
-      transition: 
-        color .2s ease-in-out,
-        border .2s ease-in-out;
-    }
+      color: var(--cd-post-content-link-visited-text-color);
+      border-bottom: 1px solid var(--cd-post-content-link-visited-border-color);
+    }    
   }
 
   .volunteers {
@@ -134,6 +136,12 @@ const Content = styled.div`
 
   @media screen and (prefers-reduced-motion: no-preference) {
     transition: color .2s ease-in-out;
+
+    a {
+      transition: 
+        color .2s ease-in-out,
+        border .2s ease-in-out;
+    }
   }
 `;
 

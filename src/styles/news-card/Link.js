@@ -21,15 +21,11 @@ const Link = styled.a`
     left: 20px;
     width: calc(100% - 40px);
     height: 100%;
-    box-shadow: 0 4px 5px -5px #ffffff;
-
-    @media screen and (prefers-reduced-motion: no-preference) {
-      transition: box-shadow .2s ease-in-out;
-    }
+    box-shadow: var(--cd-news-card-link-box-shadow);    
   }
 
   :hover:before {
-    box-shadow: 0 4px 5px -5px #bebebe;
+    box-shadow: var(--cd-news-card-link-hover-box-shadow);
   }
 
   :hover ${Text}:before {
@@ -38,6 +34,10 @@ const Link = styled.a`
 
   @media screen and (prefers-reduced-motion: no-preference) {
     transition: color .2s ease-in-out;
+
+    &:before {
+      transition: box-shadow .2s ease-in-out;
+    }
   }
 `;
 

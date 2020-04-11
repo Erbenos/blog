@@ -7,7 +7,7 @@ import {
   Container,
   Description,
   Padding,
-  Span,
+  Heading,
   StyledLink,
   Title,
 } from '../../styles/post-card';
@@ -32,7 +32,9 @@ const PostCard = ({ slug, title, description, author, cover, date }) => {
           <AuthorDate>
             {moment(date).format(DATE_FORMAT)} • {author}
           </AuthorDate>
-          <Title><Span>{title}</Span></Title>
+          <Title>
+            <Heading>{title}</Heading>
+          </Title>
           {description ? <Description>{description}</Description> : null}
         </Padding>
       </Container>
