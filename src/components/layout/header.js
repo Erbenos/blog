@@ -1,6 +1,8 @@
 import { Col, Container } from 'react-grid-system';
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import LogoFile from '!!raw-loader!./logo.svg';
 import {
   Logo,
   NavigationBar,
@@ -14,7 +16,8 @@ const Header = ({ items }) => (
     <Container>
       <NavigationBar align={'center'} style={{ marginLeft: 0, marginRight: 0 }}>
         <ResponsiveCenterCol xs={12} md={3} style={{ padding: 0 }}>
-          <Logo href={'https://cesko.digital'} />
+          <Logo href={'https://cesko.digital'} dangerouslySetInnerHTML={{ __html: LogoFile }}>
+          </Logo>
         </ResponsiveCenterCol>
         <Col xs={12} md={9} style={{ padding: 0 }}>
           <ResponsiveCenterRow>

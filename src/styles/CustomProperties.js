@@ -6,8 +6,10 @@ const CustomProperties = createGlobalStyle`
     --cd-document-base-font-family: 'Work Sans', sans-serif;
     --cd-document-text-color: #ffffff;
     --cd-document-background-color: #1E1E1E;
-    --cd-logo-text-color: #1a2c29;
+    --cd-logo-color: #ffffff;
+    --cd-logo-hover-color: #776E63;
     --cd-nav-link-text-color: #ffffff;
+    --cd-nav-link-hover-text-color: #776E63;
     --cd-news-card-background-color: #2E2E2E;
     --cd-news-card-box-shadow: 0px 4px 14px rgba(10, 10, 10, 0.07);
     --cd-news-card-divider-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.07);
@@ -15,6 +17,7 @@ const CustomProperties = createGlobalStyle`
     --cd-news-card-link-hover-box-shadow: 0 4px 2px -2px rgba(255, 255, 255, 0.07);
     --cd-news-card-text-color: #ffffff;
     --cd-news-card-title-text-color: #ffffff;
+    --cd-news-card-icon-color: #ffffff;
     --cd-post-background-color: #2E2E2E;
     --cd-post-container-box-shadow-color: rgba(10, 10, 10, 0.07);
     --cd-post-author-text-color: #ffffff;
@@ -61,8 +64,10 @@ const CustomProperties = createGlobalStyle`
     --cd-footer-background-color: #555459;
     --cd-cookies-note-text-color: #ffffff;
     --cd-document-background-color: #f4e2cc;
-    --cd-logo-text-color: #1a2c29;
+    --cd-logo-color: #1a2c29;
+    --cd-logo-hover-color: #776E63;
     --cd-nav-link-text-color: #24211d;
+    --cd-nav-link-hover-text-color: #776E63;
     --cd-footer-text-color: #ffffff;
     --cd-footer-background-color: #202d33;
     --cd-cookies-note-text-color: #ffffff;
@@ -73,6 +78,7 @@ const CustomProperties = createGlobalStyle`
     --cd-news-card-link-hover-box-shadow: 0 4px 5px -5px #bebebe;
     --cd-news-card-text-color: #2b2b2b;
     --cd-news-card-title-text-color: #000000;
+    --cd-news-card-icon-color: #000000;
     --cd-post-background-color: #ffffff;
     --cd-post-container-box-shadow-color: rgba(10, 10, 10, 0.07);
     --cd-post-author-text-color: #000000;

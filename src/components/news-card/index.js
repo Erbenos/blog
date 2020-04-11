@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import NewsArrow from '!!raw-loader!./news-arrow.svg';
 import {
   Link,
   Card,
@@ -14,7 +15,8 @@ import {
 const NewsCard = ({ items }) => (
   <Card>
     <Row>
-      <TitleIcon src={'/icons/news.svg'} />
+      <TitleIcon src={'/icons/news.svg'} dangerouslySetInnerHTML={{ __html: NewsArrow }}>
+      </TitleIcon>
       <Title>Krátké aktuality</Title>
     </Row>
     {items.map((item, index) => {

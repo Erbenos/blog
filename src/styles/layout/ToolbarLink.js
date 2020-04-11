@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ToolbarLink = styled.a`
   vertical-align: middle;
-  color: var(--cd-nav-link-text-color);
   margin: 20px;
   font-size: 16px;
   text-decoration: none;
@@ -12,16 +11,17 @@ export const ToolbarLink = styled.a`
   overflow: hidden;
   white-space: nowrap;
   width: min-content;
+  color: var(--cd-nav-link-text-color);
 
   ${props =>
-    props.underline ? 'border-bottom: solid 1px rgba(0,0,0,0.5);' : ''}
+    props.underline ? 'border-bottom: solid 1px var(--cd-nav-link-hover-text-color);' : ''}
 
   &:hover {
-    opacity: 0.6;
+    color: var(--cd-nav-link-hover-text-color);
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {
-    transition: opacity .2s ease-in-out, color .2s ease-in-out;
+    transition: color .2s ease-in-out;
   }
 
   @media (max-width: 768px) {

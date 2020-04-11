@@ -4,20 +4,21 @@ const Logo = styled.a`
   display: inline-block;
   width: 134px;
   height: 27px;
-  background: url('/logos/logo.svg');
-  padding: 0 !important;
-  color: var(--cd-logo-text-color);
+  padding: 0;
 
-  &__inner {
-    display: none;
+  > svg {
+    fill: var(--cd-logo-color);
   }
 
-  &:hover {
-    opacity: 0.6;
+  &:hover > svg {
+    fill: var(--cd-logo-hover-color);
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {
-    transition: opacity .2s ease-in-out, color .2s ease-in-out;
+
+    > svg {
+      transition: fill .2s ease-in-out;
+    }
   }
 `;
 
